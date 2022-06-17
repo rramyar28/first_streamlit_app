@@ -11,6 +11,6 @@ import pandas
 my_fruit_list = pandas.read_csv("https://uni-lab-files.s3.us-west-2.amazonaws.com/dabw/fruit_macros.txt")
 my_fruit_list = my_fruit_list.set_index('Fruit')
 # Lets put a pick list here so they can add the fruit they want to add
-streamlit.multiselect("Pick Some Fruits:", list(my_fruit_list.index),['Avacado', 'Strawberries'])
+streamlit.multiselect("Pick Some Fruits:", list(my_fruit_list.index),['Avacado','Strawberries'])
 #display the table on the page
 streamlit.dataframe(my_fruit_list)
